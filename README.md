@@ -1,22 +1,18 @@
-# Free HTML repair shop website template with GSAP scroll animations — Reflow
+# Free HTML repair shop website template with GSAP scroll animations
 
-**Website for a phone and laptop repair shop with walk-in repairs, prices and refurbished devices: a free HTML template in one file, with GSAP scroll animations, no build step, MIT license. Made by [8B](https://8b.com/), the AI website builder.**
+Repair shop website template: one free HTML file for a phone, laptop or console repair business, with a twelve-row diagnosis checklist, a price wall, refurbished stock, office pickups, repair by post and a booking form. The look is near-black and white with one electric blue, and the wordmark is drawn from rounded dashes. It ships with an AGENTS.md, so an AI agent can rewrite it for your own shop.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE) ![one HTML file: no build](https://img.shields.io/badge/one%20HTML%20file-no%20build-orange) ![GSAP: ScrollTrigger](https://img.shields.io/badge/GSAP-ScrollTrigger-88ce02)
 
 **[Live demo](https://8bsite.github.io/repair-shop-website-template/)** · **[Use this template](https://github.com/new?template_name=repair-shop-website-template&template_owner=8bsite)** · **[Download ZIP](https://github.com/8bsite/repair-shop-website-template/archive/refs/heads/main.zip)** · **[Template page on 8b.com](https://8b.com/templates/reflow/)**
 
-<a href="https://8bsite.github.io/repair-shop-website-template/"><img src="previews/desktop.png" alt="Reflow, a free HTML template: first screen on a desktop" width="76.1%"></a> <a href="https://8bsite.github.io/repair-shop-website-template/"><img src="previews/phone.png" alt="Reflow, a free HTML template: first screen on a phone" width="21.9%"></a>
+<a href="https://8bsite.github.io/repair-shop-website-template/"><img src="previews/desktop.png" alt="Repair shop website template: first screen on a desktop" width="76.1%"></a> <a href="https://8bsite.github.io/repair-shop-website-template/"><img src="previews/phone.png" alt="Repair shop website template: first screen on a phone" width="21.9%"></a>
 
-<p align="center"><a href="https://8bsite.github.io/repair-shop-website-template/"><img src="previews/scroll.gif" alt="Reflow, a free HTML template: scrolling through the first sections on a desktop" width="40%"></a><br><sub>Scroll animation</sub></p>
+<p align="center"><a href="https://8bsite.github.io/repair-shop-website-template/"><img src="previews/scroll.gif" alt="Repair shop website template: scrolling through the first sections" width="40%"></a><br><sub>Scroll animation</sub></p>
 
-A one-page site for a phone and laptop repair shop with a free diagnosis, a price list, refurbished stock, business pickups and repairs by post. Near-black and white with one electric blue; the wordmark is built from rounded dashes that stretch and flood the screen on the first scroll, and a blue selection scans the checklist, crosses the pickup schedule and reads along the reviews.
+## Use it with Claude Code, Cursor or Codex
 
-Good for: phone, laptop or computer repair shop; electronics, console or watch repair; refurbished device shop; any walk-in service with a price list and a booking form.
-
-## Use it with an AI coding agent
-
-Download the files into your project (in Windows PowerShell type `curl.exe`):
+Download the four files into your project folder (`curl.exe` in Windows PowerShell):
 
 ```bash
 curl -LO https://raw.githubusercontent.com/8bsite/repair-shop-website-template/main/index.html
@@ -25,41 +21,63 @@ curl -LO https://raw.githubusercontent.com/8bsite/repair-shop-website-template/m
 curl -LO https://raw.githubusercontent.com/8bsite/repair-shop-website-template/main/CREDITS.md
 ```
 
-Then give your agent this prompt:
+Then fill in the angle brackets and give your agent this prompt:
 
 ```text
-Read AGENTS.md, then edit index.html. Use this template as the base for a site for <your repair business: what you fix, where you are, opening hours, prices, how to book>. Keep the layout, the motion and the single-file format; replace the brand name and the dash wordmark, copy, photos, prices, times, stock, links and contacts, and recolour it through the CSS variables if needed.
+Read AGENTS.md, then edit index.html. Turn it into the website for <my repair business: shop name, town and address, what I repair, opening hours and latest walk in time, repair prices and bench times, part grades and warranty length, refurbished stock, business pickup route, repair by post terms, how customers book>. Replace first the shop name and its dash wordmark, then the price wall, address, hours and phone. Keep the section ids and the classes AGENTS.md lists, and keep each --m, --a and --b value in step with the time printed beside it. Ask me for missing facts and never invent prices, warranty terms, hours, addresses, reviews or contacts.
 ```
 
-Give the agent the downloaded file, not a link: from a link it would rebuild a different page. No agent? Click **[Use this template](https://github.com/new?template_name=repair-shop-website-template&template_owner=8bsite)**, edit `index.html` and turn on **Settings → Pages**.
+Begin with the shop name and the dash wordmark: the demo's six letters are rounded dashes in the markup, not a font. Then rewrite the price wall, address, hours and contacts. Vibe coding this in Claude Code, Cursor or Codex works when the agent asks the owner for prices, warranty terms, the pickup route, postage terms and who wrote each review. Keep the section ids and the classes AGENTS.md lists, and change the --m, --a and --b numbers that size the bars together with the printed times. As a computer repair shop website template it needs laptop checks in place of Face ID and camera flash; the list can change length, but the words twelve checks appear in four paragraphs.
 
-## What's on the page
+No agent? Click **[Use this template](https://github.com/new?template_name=repair-shop-website-template&template_owner=8bsite)**, edit `index.html` on GitHub and turn on **Settings > Pages**.
 
-- **Navigation** — top bar: dash mark and name, opening hours, section links, Book a repair button; phone menu overlay
-- **Reflow: Phone and laptop repair, done at the window while you watch.** — two screens: a dash-built wordmark with headline and contact bar, then a staircase statement with three photos (demo: REFLOW, "Most broken things are fixable.")
-- **Fifteen minutes, free, out loud.** — service explainer: staircase heading, paragraph and a twelve-row checklist with results and a quote (demo: the free diagnosis)
-- **Price wall** — price list table grouped by device, each row with models, a time bar and a price (demo: Price wall)
-- **Fixed at the window.** — how-we-work block: staircase heading over a wide photo cut into four strips, three columns of text (demo: "Fixed at the window.")
-- **Three grades of part. You choose, and the receipt names the one we fitted.** — comparison table of three options with four rows and an example price (demo: Original, Certified, Value parts)
-- **Second life** — horizontal shelf of numbered products with photo, specs, price and a Reserve link (demo: five refurbished devices)
-- **For offices and schools: we collect on a weekly route, leave a loan device for every one we take and invoice once a month.** — business offer with a weekly schedule drawn as bars on an hour grid (demo: office and school pickups, Monday to Friday)
-- **Post it.** — how it works: four steps under one dashed line and a button (demo: repair by post)
-- **Reviews** — three customer quotes in large type, each with name and device
-- **Before you ask.** — questions and answers (native &lt;details&gt;)
-- **Come to the bench.** — contact and booking: staircase heading, address, hours, phone and email, a photo and a booking form (placeholders)
-- **Footer** — dashed rule, one-line description, address, contact and page links, copyright and the Design: 8B credit
+## Sections and motion
+
+- **Navigation**: top bar: dash mark and name, opening hours, section links, Book a repair button; phone menu overlay.
+- **Reflow: Phone and laptop repair, done at the window while you watch.**: two screens: a dash-built wordmark with headline and contact bar, then a staircase statement with three photos (demo: REFLOW, "Most broken things are fixable."). Smooth scrolling throughout; small uppercase lines spread word by word to full width. On the held first screen the dash wordmark stretches and floods white, then staircase words slide in over rising photos.
+- **Fifteen minutes, free, out loud.**: service explainer: staircase heading, paragraph and a twelve-row checklist with results and a quote (demo: the free diagnosis). Pinned on large screens, a blue band steps down the twelve checks as you scroll, turning each from Queued to its result.
+- **Price wall**: price list table grouped by device, each row with models, a time bar and a price (demo: Price wall). As each device group appears, its time bars draw from the left, and a blue selection sweeps over the cheaper-price promise.
+- **Fixed at the window.**: how-we-work block: staircase heading over a wide photo cut into four strips, three columns of text (demo: "Fixed at the window."). Tied to scroll, four strips of the workshop photo slide from staggered heights into one picture.
+- **Three grades of part. You choose, and the receipt names the one we fitted.**: comparison table of three options with four rows and an example price (demo: Original, Certified, Value parts). As the comparison table comes into view, the dash beside each row label draws in from the left.
+- **Second life**: horizontal shelf of numbered products with photo, specs, price and a Reserve link (demo: five refurbished devices). The section pins and the shelf of five refurbished devices runs sideways as you scroll.
+- **For offices and schools: we collect on a weekly route, leave a loan device for every one we take and invoice once a month.**: business offer with a weekly schedule drawn as bars on an hour grid (demo: office and school pickups, Monday to Friday). Tied to scroll, a blue cursor sweeps the hour grid; pickup bars it passes turn dark, the ones under it blue.
+- **Post it.**: how it works: four steps under one dashed line and a button (demo: repair by post). The four dashes above the steps draw in from the left, one after another, as the steps come into view.
+- **Reviews**: three customer quotes in large type, each with name and device. Tied to scroll, a blue selection box jumps word by word along each quote, as if someone were reading it.
+- **Before you ask.**: questions and answers (native &lt;details&gt;).
+- **Come to the bench.**: contact and booking: staircase heading, address, hours, phone and email, a photo and a booking form (placeholders). Tied to scroll, the heading grows from one small line into a big three-line staircase.
+- **Footer**: dashed rule, one-line description, address, contact and page links, copyright and the Design: 8B credit. The dashed rule that opens the footer draws in dash after dash as it appears.
 
 ## Design
 
-Palette: ![#0e0e0e](https://img.shields.io/badge/-%230e0e0e-0e0e0e?style=flat-square) ![#f5f5f5](https://img.shields.io/badge/-%23f5f5f5-f5f5f5?style=flat-square) ![#d0d0d0](https://img.shields.io/badge/-%23d0d0d0-d0d0d0?style=flat-square) ![#8e8e8e](https://img.shields.io/badge/-%238e8e8e-8e8e8e?style=flat-square) ![#575757](https://img.shields.io/badge/-%23575757-575757?style=flat-square) ![#0000ff](https://img.shields.io/badge/-%230000ff-0000ff?style=flat-square) ![#1b1b1b](https://img.shields.io/badge/-%231b1b1b-1b1b1b?style=flat-square) ![#e2e2e2](https://img.shields.io/badge/-%23e2e2e2-e2e2e2?style=flat-square)  
-Fonts: Instrument Sans, TikTok Sans (Google Fonts). Change both through the CSS variables in the `:root` block at the top of `<head>`.
+![#0e0e0e](https://img.shields.io/badge/-%230e0e0e-0e0e0e?style=flat-square) near-black grained sections  
+![#f5f5f5](https://img.shields.io/badge/-%23f5f5f5-f5f5f5?style=flat-square) off-white sections, headings  
+![#d0d0d0](https://img.shields.io/badge/-%23d0d0d0-d0d0d0?style=flat-square) text on dark, wordmark  
+![#8e8e8e](https://img.shields.io/badge/-%238e8e8e-8e8e8e?style=flat-square) muted text on dark  
+![#575757](https://img.shields.io/badge/-%23575757-575757?style=flat-square) muted text on light  
+![#0000ff](https://img.shields.io/badge/-%230000ff-0000ff?style=flat-square) electric blue highlights  
+![#1b1b1b](https://img.shields.io/badge/-%231b1b1b-1b1b1b?style=flat-square) hairlines on dark  
+![#e2e2e2](https://img.shields.io/badge/-%23e2e2e2-e2e2e2?style=flat-square) hairlines, form panel
 
-- The REFLOW wordmark on the first screen is not a font: each letter is a 5-column grid of rounded dashes in the markup (.op-wm__letter, .op-wm__row, <i style="grid-column:…">). For another name, redraw the letters in the same way, or replace the block with text.
-- The time bars on the price wall (style="--m:<minutes>") and the pickup windows (style="--a:<hour>;--b:<hour>") are sized from those numbers: update them together with the visible times.
+**Instrument Sans**: headings and body, very large and tight. **TikTok Sans**: condensed uppercase labels and buttons (Google Fonts). A four-column grid where near-black and off-white sections take turns. Headings step across the columns like a staircase. Rounded dashes are the motif: they build the wordmark and mark buttons, time bars, steps and the footer rule. Electric blue is kept for highlights, and most photos sit in barely rounded tiles.
+
+## Questions
+
+**Is this a cell phone repair website template or does it cover laptops too?**  
+It covers both. The price wall has three groups: five phone repairs, five laptop repairs and three for tablets and consoles. The twelve diagnosis checks lean towards phones, with Face ID and Cameras and flash among them, so a laptop-only shop should rename a few. The demo prices are in pounds with VAT included, so change the currency and the tax wording too.
+
+**How do I change the prices and bench times?**  
+Edit the cells of the HTML table in the prices section. Each dash bar takes its length from a --m value in minutes, where 180 is the full three hour scale, so change --m together with the printed time. Rows can be added or removed freely. The note under the table about water damage and data recovery is plain text.
+
+**Does the booking form send anything?**  
+No, not yet. Pressing Book a slot only runs a check on the name and contact fields, then prints the thank-you or the error text next to the button; no request leaves the page. To receive bookings, connect Formspree or Netlify Forms, or delete the form with its script and keep the email link. Rewrite the promised confirmation within the hour as well.
+
+## Is it the right base?
+
+It fits where a visible price list and a bench customers can watch decide the sale, with rebuilt devices or office accounts as a sideline. A shop that quotes every job by hand may prefer the live calculator in the [print studio](https://8b.com/templates/dotdrum/) template, and a phone repair template for a post-only business would rewrite the window bench claims and keep the four posting steps. As a repair service template it has one clear limit: it is built for enquiries, not stock or payments. The form sends nothing yet, and every Reserve link jumps to the booking section.
 
 ## Before you publish
 
-- Replace everything marked `data-8b-placeholder` (social preview image, favicon, phone, email, form) and the invented demo facts: prices, dates, address. [AGENTS.md](AGENTS.md) lists them.
+- Replace what is marked `data-8b-placeholder` (social preview image, favicon, phone, email, form) and the invented demo facts; [AGENTS.md](AGENTS.md) lists them.
 - The form sends nothing yet: connect it to Formspree or Netlify Forms, or remove it.
 
 ## Tech
